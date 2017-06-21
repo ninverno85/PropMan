@@ -1,0 +1,32 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Welcome to PropMAN</h1>
+    <p class="lead"></p>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<form>
+  <div class="form-group">
+    <label>Email Address</label>
+    <input ng-model="vm.nameObject.email" type="email" class="form-control" id="Email1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label>User First Name</label>
+    <input ng-model="vm.nameObject.firstName" class="form-control" type="text" placeholder="Name">
+  </div>
+    <div class="form-group">
+    <label>User Last Name</label>
+    <input ng-model="vm.nameObject.lastName" class="form-control" type="text" placeholder="Name">
+  </div>
+  <div class="form-group">
+  </div>
+  <div class="checkbox">
+    <label> Property Owner
+      <input ng-model= "vm.nameObject.propertyOwner" type="checkbox">
+    </label>
+  </div>
+  <button ng-click="vm.register(vm.nameObject)" type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+</div>
